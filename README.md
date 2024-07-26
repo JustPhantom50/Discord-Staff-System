@@ -7,7 +7,7 @@ Requirement:
 To set this code up, you will need some technical skills
 
 ## First: 
-Setup Mongo and import Motor (asynchronous Mongo library)
+Setup Mongo and import Motor (asynchronous Mongo library). add this collection name: "staff_system"
 
 ## Second: 
 Put this code into your on_ready function, all this does is create a cached variable of the staff members for the bot to use:
