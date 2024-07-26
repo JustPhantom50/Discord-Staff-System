@@ -32,5 +32,16 @@ staff_remove @user - Removes a staff member from the system (is owner only)
 staff_force_logout @user - Forces a user logout to prevent abuse (is owner only)
 staff_login - login to the staff system (you will have to be added)
 
+functions:
+@is_staff() - its a command check so @ it right after the command call. will check to see if you are a staff member
+is_admin(ctx) - just a function, that will check to see if you are an admin
+is_mod(ctx) - just a function, that will check to see if you are a mod
+is_support(ctx) - just a function, that will check to see if you are a support member
+
+roles types are as follows but can be changed:
+admin - admin, owner, core_team
+mod - mod, moderator
+support - support
+
 Config:
 By default when you log in, you have 10 minutes to do what you need to do then it forces a logout. you can change that by going to line 54 and replacing "600" with your desired amount of seconds. If you do not want that function, comment out lines 48-63 and line 46
