@@ -9,8 +9,8 @@ def is_staff():
         for member in members:
             if member['user_id'] == ctx.author.id:
                 return True
-            else:
-                return False
+            
+        return False
     return commands.check(predicate)
 
 async def is_admin(ctx: commands.Context):
@@ -19,8 +19,8 @@ async def is_admin(ctx: commands.Context):
     for member in members:
         if member['role'].lower() in admin_roles and member['logged_in']:
             return True
-        else:
-            return False
+
+    return False
 
 async def is_mod(ctx: commands.Context):
     members = ctx.bot.staff_members
@@ -28,8 +28,8 @@ async def is_mod(ctx: commands.Context):
     for member in members:
         if member['role'].lower() in mod_roles and member['logged_in']:
             return True
-        else:
-            return False
+
+    return False
 
 async def is_support(ctx: commands.Context):
     members = ctx.bot.staff_members
@@ -37,8 +37,8 @@ async def is_support(ctx: commands.Context):
     for member in members:
         if member['role'].lower() in support_roles and member['logged_in']:
             return True
-        else:
-            return False
+
+    return False
 
 class staff_system(commands.Cog):
     def __init__(self, bot):
