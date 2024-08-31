@@ -44,4 +44,4 @@ Import the file on this git hub repo, it's a cog file. Please replace "from util
 - support - support
 
 ## Config:
-By default when you log in, you have 10 minutes to do what you need to do then it forces a logout. you can change that by going to line 54 and replacing "600" with your desired amount of seconds. If you do not want that function, comment out lines 48-63 and line 46
+By default when you log in, you have 10 minutes to do what you need to do then it forces a logout. you can change that by going to line 58 and replacing "600" with your desired amount of seconds. If you do not want that function, comment out lines 51-71 and line 49. By default this task allows all admins to be exempt from the force logout, this way admins and login and stay logged in. if you want to remove this please comment out lines 59 and 60
